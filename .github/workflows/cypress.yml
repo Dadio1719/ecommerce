@@ -28,7 +28,7 @@ jobs:
         server_address: smtp.gmail.com
         server_port: 587
         username: page object modelling
-        password: ${{ secrets.GMAIL_APP_PASSWORD }}
+        password: ${{ secrets.rvviorpsybhjimnt}}
 
         subject: Cypress Test Report
         body: |
