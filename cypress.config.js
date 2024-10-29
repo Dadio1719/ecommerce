@@ -6,6 +6,13 @@ module.exports = defineConfig({
         "defaultCommandTimeout": 13000,
         "pageLoadTimeout": 50000,
        "viewportHeight": 800,
-       "viewportWidth": 1500
+       "viewportWidth": 1500,
+       "reporter": "mochawesome",
+       "reporterOptions": {
+       "reportDir": "cypress/reports",
+       "overwrite": false,
+       "html": true,
+       "json": true
+       }
   },
 });
