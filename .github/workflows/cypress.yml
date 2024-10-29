@@ -27,13 +27,12 @@ jobs:
       with:
         server_address: smtp.gmail.com
         server_port: 587
-        username: page object modelling
-        password: ${{ secrets.rvviorpsybhjimnt}}
-
+        username: ${{ secrets.GMAIL_USERNAME }}
+        password: ${{ secrets.GMAIL_APP_PASSWORD }}
         subject: Cypress Test Report
         body: |
           Hi,  
           The Cypress test has completed. Find the attached report.
-        to: your-email@example.com
-        from: ${{ secrets.EMAIL_USERNAME }}
+        to: reubenamissah22@gmail.com
+        from: ${{ secrets.GMAIL_USERNAME }}
         attachments: cypress/reports/*.html
